@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"sensor_node\startup_stm32f103xb.o"
+"sensor_node\i2c-lcd.o"
+"sensor_node\main.o"
+"sensor_node\stm32f1xx_it.o"
+"sensor_node\stm32f1xx_hal_msp.o"
+"sensor_node\stm32f1xx_hal_gpio_ex.o"
+"sensor_node\stm32f1xx_hal_i2c.o"
+"sensor_node\stm32f1xx_hal.o"
+"sensor_node\stm32f1xx_hal_rcc.o"
+"sensor_node\stm32f1xx_hal_rcc_ex.o"
+"sensor_node\stm32f1xx_hal_gpio.o"
+"sensor_node\stm32f1xx_hal_dma.o"
+"sensor_node\stm32f1xx_hal_cortex.o"
+"sensor_node\stm32f1xx_hal_pwr.o"
+"sensor_node\stm32f1xx_hal_flash.o"
+"sensor_node\stm32f1xx_hal_flash_ex.o"
+"sensor_node\stm32f1xx_hal_exti.o"
+"sensor_node\stm32f1xx_hal_tim.o"
+"sensor_node\stm32f1xx_hal_tim_ex.o"
+"sensor_node\stm32f1xx_hal_uart.o"
+"sensor_node\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "sensor_node\sensor_node.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "sensor_node.map" -o sensor_node\sensor_node.axf
